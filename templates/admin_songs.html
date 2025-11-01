@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SoundWave Admin - Manage Songs</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/admin.css') }}">
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SoundWave Admin</h1>
+            <div>
+                <a href="{{ url_for('home') }}">← Back to Home</a> |
+                <a href="{{ url_for('logout') }}">Logout</a>
+            </div>
+        </header>
+
+        <section class="stats">
+            <div class="card">
+                <h3>Total Songs</h3>
+                <p>{{ total_songs }}</p>
+            </div>
+            <div class="card">
+                <h3>Genres</h3>
+                <p>{{ genre_count }}</p>
+            </div>
+        </section>
+
+        <section class="controls">
+            <input type="text" placeholder="Search by title, artist, or album..." id="searchInput">
+            <button class="add-btn">+ Add New Song</button>
+        </section>
+
+        <table id="song-table" class="song-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Artist</th>
+                    <th>Album</th>
+                    <th>Genre</th>
+                    <th>Year</th>
+                    <th>Duration</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for song in songs %}
+                <tr>
+                    <td>{{ song.id }}</td>
+                    <td>{{ song.title }}</td>
+                    <td>{{ song.artist }}</td>
+                    <td>{{ song.album }}</td>
+                    <td>{{ song.genre }}</td>
+                    <td>{{ song.year }}</td>
+                    <td>{{ song.duration }}s</td>
+                    <td>
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#song-table').DataTable({
+                paging: false,          // show every row
+                searching: true,        // keep the search box
+                info: false,
+                order: [[0, 'asc']],
+                scrollY: '60vh',        // nice scrollable area
+                scrollCollapse: true
+            });
+        });
+    </script>
+</body>
+</html>

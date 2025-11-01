@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Playlists | SoundWave</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; background: #f8fafc; margin: 0; padding: 30px; }
+    h1 { color: #1e1b4b; }
+    .playlist-list { display: flex; flex-wrap: wrap; gap: 20px; }
+    .playlist-card { background: white; border-radius: 12px; padding: 20px; width: 240px; text-align: center; box-shadow: 0 4px 8px rgba(0,0,0,0.1); cursor: pointer; transition: all 0.25s ease; }
+    .playlist-card:hover { transform: translateY(-4px); background: #eef2ff; }
+  </style>
+</head>
+<body>
+  <a href="/home">⬅ Back to Home</a>
+  <h1>🎧 Your Playlists</h1>
+
+  {% if playlists %}
+  <div class="playlist-list">
+    {% for playlist in playlists %}
+    <div class="playlist-card" onclick="window.location.href='/playlist/{{ playlist.id }}'">
+      <h2>{{ playlist.name }}</h2>
+      <p>Created on {{ playlist.created_at.strftime('%Y-%m-%d') }}</p>
+    </div>
+    {% endfor %}
+  </div>
+  {% else %}
+  <p>You haven’t created any playlists yet 🎵</p>
+  {% endif %}
+</body>
+</html>
