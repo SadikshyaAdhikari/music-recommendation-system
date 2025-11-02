@@ -8,9 +8,17 @@ from sklearn.metrics.pairwise import cosine_similarity
 import logging
 from datetime import datetime
 from werkzeug.security import generate_password_hash, check_password_hash
+import os
 
-# Configure logging
-logging.basicConfig(level=logging.INFO)
+# Configure logging to both console and file
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler('app.log', encoding='utf-8'),
+        logging.StreamHandler()
+    ]
+)
 logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
@@ -18,12 +26,12 @@ app.secret_key = "mysecret123"
 CORS(app)
 
 # Database configuration
+# Uses environment variables if set, otherwise defaults to Docker MySQL values
 DB_CONFIG = {
-    'host': 'localhost',
-    'database': 'music_recommendation_db',
-    'user': 'root',
-    'password': '',
-    
+    'host': os.getenv('MYSQL_HOST', 'localhost'),
+    'database': os.getenv('MYSQL_DATABASE', 'music_recommendation_db'),
+    'user': os.getenv('MYSQL_USER', 'root'),
+    'password': os.getenv('MYSQL_PASSWORD', 'rootpassword'),  # Default Docker MySQL password
 }
 
 class MusicRecommendationSystem:
@@ -104,10 +112,49 @@ class MusicRecommendationSystem:
                 )
                 """
                 
+                # Create liked_songs table
+                create_liked_songs_table = """
+                CREATE TABLE IF NOT EXISTS liked_songs (
+                    id INT AUTO_INCREMENT PRIMARY KEY,
+                    user_id VARCHAR(100),
+                    music_id INT,
+                    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                    FOREIGN KEY (music_id) REFERENCES music(id),
+                    UNIQUE KEY unique_user_music (user_id, music_id)
+                )
+                """
+                
+                # Create playlists table
+                create_playlists_table = """
+                CREATE TABLE IF NOT EXISTS playlists (
+                    id INT AUTO_INCREMENT PRIMARY KEY,
+                    user_id VARCHAR(100),
+                    name VARCHAR(255) NOT NULL,
+                    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                    UNIQUE KEY unique_user_playlist (user_id, name)
+                )
+                """
+                
+                # Create playlist_songs table
+                create_playlist_songs_table = """
+                CREATE TABLE IF NOT EXISTS playlist_songs (
+                    id INT AUTO_INCREMENT PRIMARY KEY,
+                    playlist_id INT,
+                    music_id INT,
+                    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                    FOREIGN KEY (playlist_id) REFERENCES playlists(id) ON DELETE CASCADE,
+                    FOREIGN KEY (music_id) REFERENCES music(id),
+                    UNIQUE KEY unique_playlist_music (playlist_id, music_id)
+                )
+                """
+                
                 cursor.execute(create_users_table)
                 cursor.execute(create_music_table)
                 cursor.execute(create_preferences_table)
                 cursor.execute(create_history_table)
+                cursor.execute(create_liked_songs_table)
+                cursor.execute(create_playlists_table)
+                cursor.execute(create_playlist_songs_table)
                 
                 connection.commit()
                 logger.info("Database initialized successfully")
@@ -246,12 +293,17 @@ class MusicRecommendationSystem:
             music_similarities.sort(key=lambda x: x[1], reverse=True)
             
             for idx, similarity in music_similarities:
-                if idx not in preference_indices and similarity > 0.1:
+                if idx not in preference_indices and similarity > 0.01:  # Lower threshold from 0.1 to 0.01
                     music = self.music_data[idx].copy()
                     music['similarity_score'] = float(similarity)
                     recommendations.append(music)
                     if len(recommendations) >= 10:
                         break
+            
+            if recommendations:
+                logger.info(f"ML found {len(recommendations)} recommendations (similarity range: {recommendations[0]['similarity_score']:.3f} - {recommendations[-1]['similarity_score']:.3f})")
+            else:
+                logger.warning(f"ML found no recommendations (highest similarity: {music_similarities[0][1] if music_similarities else 'N/A'})")
             
             return recommendations
             
@@ -511,60 +563,142 @@ def dashboard(song_id=None):
         if song_id:
             cursor.execute("SELECT * FROM music WHERE id = %s", (song_id,))
             current_song = cursor.fetchone()
-
-            # 🕒 Record to recently played
-            cursor.execute("""
-                INSERT INTO listening_history (user_id, music_id, timestamp)
-                VALUES (%s, %s, NOW())
-            """, (user_id, song_id))
-            connection.commit()
+            
+            if not current_song:
+                logger.warning(f"Song with id {song_id} not found")
+                # Fallback: get first available song
+                cursor.execute("SELECT * FROM music LIMIT 1")
+                current_song = cursor.fetchone()
+                if current_song:
+                    song_id = current_song['id']
+            
+            if song_id and current_song:
+                # 🕒 Record to recently played
+                try:
+                    cursor.execute("""
+                        INSERT INTO listening_history (user_id, music_id, timestamp)
+                        VALUES (%s, %s, NOW())
+                    """, (user_id, song_id))
+                    connection.commit()
+                except Error as e:
+                    logger.warning(f"Could not insert listening history: {e}")
+                    connection.rollback()
 
         # 🕒 Fetch recently played songs
-        cursor.execute("""
-            SELECT DISTINCT m.*
-            FROM music m
-            JOIN listening_history h ON m.id = h.music_id
-            WHERE h.user_id = %s
-            ORDER BY h.timestamp DESC
-            LIMIT 10
-        """, (user_id,))
-        recently_played = cursor.fetchall()
+        try:
+            cursor.execute("""
+                SELECT DISTINCT m.*, MAX(h.timestamp) as last_played
+                FROM music m
+                JOIN listening_history h ON m.id = h.music_id
+                WHERE h.user_id = %s
+                GROUP BY m.id
+                ORDER BY last_played DESC
+                LIMIT 10
+            """, (user_id,))
+            recently_played = cursor.fetchall()
+            # Remove the last_played key that was added for sorting
+            for song in recently_played:
+                if 'last_played' in song:
+                    del song['last_played']
+        except Error as e:
+            logger.warning(f"Could not fetch recently played: {e}")
+            recently_played = []
 
-        # 🎯 Recommend songs
-        if song_id:
-            # Recommend songs excluding current one
-            cursor.execute("""
-                SELECT * FROM music
-                WHERE id != %s
-                ORDER BY RAND()
-                LIMIT 8
-            """, (song_id,))
+        # 🎯 Get recommendations using ML system only (no fallbacks)
+        recommended_songs = []
+        recommendation_source = "none"
+        
+        if song_id and current_song:
+            # Use the current song for ML recommendations
+            try:
+                user_preferences = [song_id]
+                recommended_songs = music_system.calculate_similarities(user_preferences)
+                
+                if recommended_songs:
+                    recommendation_source = "ML (similarity-based)"
+                    logger.info(f"✅ ML recommendations found: {len(recommended_songs)} songs")
+                else:
+                    logger.info(f"⚠️ ML returned no recommendations (similarity threshold or empty)")
+                
+                # Record user interaction for future recommendations
+                try:
+                    music_system.record_user_interaction(user_id, song_id, 'play')
+                except Exception as e:
+                    logger.warning(f"Could not record interaction: {e}")
+            except Exception as e:
+                logger.warning(f"ML recommendation failed: {e}")
+                recommended_songs = []
         else:
-            # If no song selected, just random songs
-            cursor.execute("""
-                SELECT * FROM music
-                ORDER BY RAND()
-                LIMIT 8
-            """)
-        recommended_songs = cursor.fetchall()
+            # No song selected - get recommendations based on user preferences/history
+            try:
+                cursor.execute("""
+                    SELECT music_id
+                    FROM user_preferences
+                    WHERE user_id = %s
+                    ORDER BY preference_score DESC
+                    LIMIT 10
+                """, (user_id,))
+                preferences = [row['music_id'] for row in cursor.fetchall()]
+                
+                if preferences:
+                    try:
+                        recommended_songs = music_system.calculate_similarities(preferences)
+                        if recommended_songs:
+                            recommendation_source = "ML (similarity-based)"
+                    except Exception as e:
+                        logger.warning(f"ML recommendation from preferences failed: {e}")
+                else:
+                    logger.info("No user preferences found for recommendations")
+            except Error as e:
+                logger.warning(f"Preferences query failed: {e}")
+                recommended_songs = []
+        
+        # No fallback for current_song - only show if explicitly selected
+
+        # Log for debugging
+        logger.info(f"Dashboard: current_song={current_song['title'] if current_song else None}, recommended_count={len(recommended_songs)}, history_count={len(recently_played)}, source={recommendation_source}")
+        
+        # Add recommendation source to context for debugging (optional - can remove later)
+        if current_song:
+            logger.info(f"Current song: '{current_song.get('title')}' by {current_song.get('artist')} ({current_song.get('genre')})")
+        if recommended_songs:
+            logger.info(f"Top recommendation: '{recommended_songs[0].get('title')}' by {recommended_songs[0].get('artist')} ({recommended_songs[0].get('genre')})")
+        
+        # Close connection
+        if cursor:
+            cursor.close()
+        if connection:
+            connection.close()
 
         return render_template(
             'dashboard.html',
             name=name,
             current_song=current_song,
             history=recently_played,
-            recommendations=recommended_songs
+            songs=recommended_songs  # Fixed: use 'songs' to match template
         )
 
     except Exception as e:
         logger.error(f"Error in dashboard: {e}")
+        import traceback
+        logger.error(traceback.format_exc())
+        
+        # Close connection even on error
+        try:
+            if 'cursor' in locals() and cursor:
+                cursor.close()
+            if 'connection' in locals() and connection:
+                connection.close()
+        except:
+            pass
+        
         return render_template(
             'dashboard.html',
             name='User',
             message=str(e),
             current_song=None,
             history=[],
-            recommendations=[]
+            songs=[]  # Fixed: use 'songs' to match template
         )
 @app.route('/like_song/<int:song_id>', methods=['POST'])
 def like_song(song_id):
@@ -855,14 +989,11 @@ def update_recommendation(song_id):
         """, (user_id,))
         recently_played = cursor.fetchall()
 
-        cursor.execute("""
-            SELECT music_id
-            FROM user_preferences
-            WHERE user_id = %s
-        """, (user_id,))
-        preferences = [row['music_id'] for row in cursor.fetchall()]
-
+        # Get recommendations based on current song using ML only
+        preferences = [song_id]  # Use current song for recommendations
         recommendations = music_system.calculate_similarities(preferences)
+        
+        # No fallbacks - only ML recommendations
 
         cursor.close()
 
@@ -937,6 +1068,24 @@ def test_get_music():
     logger.info(f"Test route - songs fetched: {len(songs)}")
     return jsonify(songs)
 
+@app.route('/debug/logs')
+def view_logs():
+    """Debug endpoint to view recent logs"""
+    if 'user_id' not in session:
+        return redirect(url_for('login'))
+    
+    try:
+        with open('app.log', 'r', encoding='utf-8') as f:
+            lines = f.readlines()
+            # Get last 100 lines
+            recent_logs = lines[-100:] if len(lines) > 100 else lines
+            html = '<!DOCTYPE html><html><head><title>Application Logs</title><style>body{font-family:monospace;padding:20px;background:#1e1e1e;color:#d4d4d4;}pre{background:#252526;padding:15px;border-radius:5px;overflow-x:auto;}</style></head><body><h1>Recent Application Logs</h1><pre>' + ''.join(recent_logs) + '</pre></body></html>'
+            return html
+    except FileNotFoundError:
+        return '<html><body><h1>No log file found yet</h1><p>Make a request to generate logs.</p></body></html>'
+    except Exception as e:
+        return f'<html><body><h1>Error reading logs</h1><p>{e}</p></body></html>'
+
 @app.errorhandler(404)
 def not_found(error):
     return jsonify({
@@ -956,6 +1105,7 @@ if __name__ == '__main__':
     logger.info("Make sure MySQL is running and database is configured properly.")
     logger.info("API will be available at: http://localhost:5000")
     music_system.insert_sample_data()  # Ensure sample data is inserted
+    music_system.build_feature_matrix()  # Rebuild feature matrix after data is inserted
     # ensure_admin_account()  # Ensure admin exists
     # logger.info(" Admin account ready: email=admin@gmail.com, password=admin123, role=Admin")
     app.run(debug=True, host='0.0.0.0', port=5000)

@@ -287,7 +287,7 @@
         <div class="rec-list" id="recList">
           {% if songs %}
             {% for s in songs %}
-              <div class="rec-item" data-id="{{ s.id }}" data-url="{{ s.audio_url or '' }}" data-image="{{ s.image_url or '' }}" data-title="{{ s.title }}" data-artist="{{ s.artist }}" onclick="openAndPlay(this)">
+              <div class="rec-item" data-id="{{ s.id }}" data-url="{{ s.audio_url or '' }}" data-image="{{ s.image_url or '' }}" data-title="{{ s.title }}" data-artist="{{ s.artist }}" data-duration="{{ s.duration or '' }}" onclick="openAndPlay(this)">
                 <div class="rec-thumb">
                   {% if s.image_url %}
                     <img src="{{ s.image_url }}" alt="{{ s.title }}">
@@ -316,15 +316,40 @@
 
 <script>
   // Grab template-provided active song if present
+  // Use current_song if available, otherwise fall back to active variable
+  {% set song_data = current_song if current_song else active %}
   const activeSong = {
-    id: "{{ active.id if active else '' }}",
-    title: `{{ (active.title|escape) if active else '' }}`,
-    artist: `{{ (active.artist|escape) if active else '' }}`,
-    album: `{{ (active.album|escape) if active and active.album else '' }}`,
-    audio_url: `{{ (active.audio_url|escape) if active and active.audio_url else '' }}`,
-    image_url: `{{ (active.image_url|escape) if active and active.image_url else '' }}`,
-    duration: `{{ (active.duration) if active and active.duration else '' }}`
+    id: "{{ song_data.id if song_data else '' }}",
+    title: `{{ (song_data.title|escape) if song_data and song_data.title else '' }}`,
+    artist: `{{ (song_data.artist|escape) if song_data and song_data.artist else '' }}`,
+    album: `{{ (song_data.album|escape) if song_data and song_data.album else '' }}`,
+    audio_url: `{{ (song_data.audio_url|escape) if song_data and song_data.audio_url else '' }}`,
+    image_url: `{{ (song_data.image_url|escape) if song_data and song_data.image_url else '' }}`,
+    duration: `{{ (song_data.duration) if song_data and song_data.duration else '' }}`
   };
+  
+  // Debug log
+  console.log('Active song loaded:', activeSong);
+  
+  // Log recommendations from template
+  const recommendations = [
+    {% if songs %}
+      {% for s in songs %}
+      {
+        id: {{ s.id }},
+        title: "{{ s.title|escape }}",
+        artist: "{{ s.artist|escape }}",
+        album: "{{ s.album|escape if s.album else '' }}",
+        audio_url: "{{ s.audio_url|escape if s.audio_url else '' }}",
+        image_url: "{{ s.image_url|escape if s.image_url else '' }}",
+        duration: "{{ s.duration if s.duration else '' }}",
+        genre: "{{ s.genre|escape if s.genre else '' }}"
+      }{% if not loop.last %},{% endif %}
+      {% endfor %}
+    {% endif %}
+  ];
+  console.log('Recommendations loaded:', recommendations);
+  console.log('Total recommendations:', recommendations.length);
 
   const player = document.getElementById('player');
   const playPauseBtn = document.getElementById('playPauseBtn');
@@ -367,8 +392,16 @@
   }
 
   function loadAndPlay(song){
-    if(!song || !song.audio_url) {
-      alert('No audio available for this selection.');
+    console.log('loadAndPlay called with:', song);
+    if(!song) {
+      alert('No song data provided.');
+      return;
+    }
+    if(!song.audio_url || song.audio_url.trim() === '') {
+      console.warn('Song has no audio_url:', song);
+      alert('No audio URL available for this song. The song may not have audio file uploaded.');
+      // Still update the UI to show the song info
+      setActiveUI(song);
       return;
     }
 
@@ -407,14 +440,28 @@
 
   // play/pause control
   playPauseBtn.addEventListener('click', function(){
-    if(player.src === ''){
-      if(activeSong && activeSong.audio_url){
-        loadAndPlay(activeSong);
-        // send update to server for play
-        recordPlayOnServer(activeSong.id);
-        return;
-      } else {
-        alert('No song selected to play.');
+    if(player.src === '' || !player.src){
+      // Check if we have a valid song with ID or audio_url
+      if(activeSong && activeSong.id){
+        // If we have ID but no audio_url, show message (don't redirect)
+        if(activeSong.id && (!activeSong.audio_url || activeSong.audio_url.trim() === '')){
+          console.warn('Song has no audio_url:', activeSong);
+          alert(`⚠️ No Audio File Available\n\nSong: "${activeSong.title}"\nArtist: ${activeSong.artist}\n\nThis song does not have an audio file URL in the database.\n\nThe song information is displayed, but audio playback is not available.\n\nTo enable playback, you need to add audio URLs to the database.`);
+          // Still update UI to show song is selected (even without audio)
+          setActiveUI(activeSong);
+          return;
+        }
+        // If we have audio_url, play it
+        if(activeSong.audio_url && activeSong.audio_url.trim() !== ''){
+          loadAndPlay(activeSong);
+          // send update to server for play
+          if(activeSong.id) recordPlayOnServer(activeSong.id);
+          return;
+        }
+      }
+      // If no song data at all, show message
+      if(!activeSong || (!activeSong.id && !activeSong.audio_url)){
+        alert('No song selected to play. Please click on a song from the recommendations or select a song from home.');
         return;
       }
     }
@@ -456,26 +503,32 @@
 
   // click recommended item -> play
   function openAndPlay(el){
+    console.log('openAndPlay called with element:', el);
     const song = {
       id: el.dataset.id,
       title: el.dataset.title,
       artist: el.dataset.artist,
-      audio_url: el.dataset.url,
-      image_url: el.dataset.image
+      audio_url: el.dataset.url || '',
+      image_url: el.dataset.image || '',
+      duration: el.dataset.duration || ''
     };
+    console.log('Song extracted from element:', song);
+    
     // update activeSong object for later use
     activeSong.id = song.id;
     activeSong.title = song.title;
     activeSong.artist = song.artist;
     activeSong.audio_url = song.audio_url;
     activeSong.image_url = song.image_url;
+    activeSong.duration = song.duration;
+    
+    console.log('Updated activeSong:', activeSong);
 
-    // navigate to same dashboard route for deep link (optional):
-    // If you want to change the url to /dashboard/<songId> (so user can bookmark), uncomment:
-    // window.history.pushState({}, '', `/dashboard/${song.id}`);
-
-    loadAndPlay(song);
-    recordPlayOnServer(song.id);
+    // Navigate to dashboard with song ID to properly load the song
+    window.location.href = `/dashboard/${song.id}`;
+    
+    // Note: loadAndPlay will be called after page navigation
+    // The recordPlayOnServer will be called in DOMContentLoaded if song has audio_url
   }
   // Like a song
 document.getElementById('likeBtn').addEventListener('click', function() {
@@ -597,17 +650,24 @@ document.getElementById('addPlaylistBtn').addEventListener('click', function() {
     });
   }
 
-  // On page load, if activeSong has audio set, try to play
+  // On page load, if activeSong has data, set up the UI
   document.addEventListener('DOMContentLoaded', function(){
-    if(activeSong && activeSong.audio_url && activeSong.audio_url.trim() !== ''){
-      // small delay ensures audio element attached and browsers ready
-      setTimeout(() => {
-        loadAndPlay(activeSong);
-        // record play once on load (so clicking from home triggers)
+    // Update UI if we have song data
+    if(activeSong && activeSong.id){
+      // Set the UI to show current song info
+      setActiveUI(activeSong);
+      
+      // If audio_url is available, try to auto-load (but don't auto-play)
+      if(activeSong.audio_url && activeSong.audio_url.trim() !== ''){
+        // Set audio source but don't auto-play (respects browser autoplay policies)
+        player.src = activeSong.audio_url;
+        player.load();
+        
+        // Record that user viewed/loaded this song
         if(activeSong.id){
           recordPlayOnServer(activeSong.id);
         }
-      }, 200);
+      }
     }
   });
   

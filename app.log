@@ -1,0 +1,428 @@
+2025-11-02 09:21:54,128 - __main__ - INFO - Database initialized successfully
+2025-11-02 09:21:54,137 - __main__ - INFO - Built feature matrix with 15 songs
+2025-11-02 09:21:54,148 - __main__ - INFO - Starting Music Recommendation System API...
+2025-11-02 09:21:54,149 - __main__ - INFO - Make sure MySQL is running and database is configured properly.
+2025-11-02 09:21:54,149 - __main__ - INFO - API will be available at: http://localhost:5000
+2025-11-02 09:21:54,164 - __main__ - INFO - Built feature matrix with 15 songs
+2025-11-02 09:21:54,184 - werkzeug - WARNING -  * Debugger is active!
+2025-11-02 09:21:54,193 - werkzeug - INFO -  * Debugger PIN: 757-167-997
+2025-11-02 09:23:29,382 - werkzeug - INFO -  * Detected change in 'D:\\python projects\\music-recommendation-system\\app.py', reloading
+2025-11-02 09:23:32,975 - __main__ - INFO - Database initialized successfully
+2025-11-02 09:23:32,992 - __main__ - INFO - Built feature matrix with 15 songs
+2025-11-02 09:23:33,024 - __main__ - INFO - Starting Music Recommendation System API...
+2025-11-02 09:23:33,025 - __main__ - INFO - Make sure MySQL is running and database is configured properly.
+2025-11-02 09:23:33,026 - __main__ - INFO - API will be available at: http://localhost:5000
+2025-11-02 09:23:33,055 - __main__ - INFO - Built feature matrix with 15 songs
+2025-11-02 09:23:33,089 - werkzeug - WARNING -  * Debugger is active!
+2025-11-02 09:23:33,106 - werkzeug - INFO -  * Debugger PIN: 757-167-997
+2025-11-02 09:24:53,030 - werkzeug - INFO -  * Detected change in 'D:\\python projects\\music-recommendation-system\\app.py', reloading
+2025-11-02 09:24:55,530 - __main__ - INFO - Database initialized successfully
+2025-11-02 09:24:55,538 - __main__ - INFO - Built feature matrix with 15 songs
+2025-11-02 09:24:55,551 - __main__ - INFO - Starting Music Recommendation System API...
+2025-11-02 09:24:55,553 - __main__ - INFO - Make sure MySQL is running and database is configured properly.
+2025-11-02 09:24:55,559 - __main__ - INFO - API will be available at: http://localhost:5000
+2025-11-02 09:24:55,576 - __main__ - INFO - Built feature matrix with 15 songs
+2025-11-02 09:24:55,594 - werkzeug - WARNING -  * Debugger is active!
+2025-11-02 09:24:55,601 - werkzeug - INFO -  * Debugger PIN: 757-167-997
+2025-11-02 09:25:18,254 - __main__ - INFO - Database initialized successfully
+2025-11-02 09:25:18,259 - __main__ - INFO - Built feature matrix with 15 songs
+2025-11-02 09:25:18,270 - __main__ - INFO - Starting Music Recommendation System API...
+2025-11-02 09:25:18,271 - __main__ - INFO - Make sure MySQL is running and database is configured properly.
+2025-11-02 09:25:18,271 - __main__ - INFO - API will be available at: http://localhost:5000
+2025-11-02 09:25:18,285 - __main__ - INFO - Built feature matrix with 15 songs
+2025-11-02 09:25:18,319 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.101.10:5000
+2025-11-02 09:25:18,319 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-02 09:25:18,323 - werkzeug - INFO -  * Restarting with stat
+2025-11-02 09:25:20,278 - __main__ - INFO - Database initialized successfully
+2025-11-02 09:25:20,285 - __main__ - INFO - Built feature matrix with 15 songs
+2025-11-02 09:25:20,300 - __main__ - INFO - Starting Music Recommendation System API...
+2025-11-02 09:25:20,301 - __main__ - INFO - Make sure MySQL is running and database is configured properly.
+2025-11-02 09:25:20,301 - __main__ - INFO - API will be available at: http://localhost:5000
+2025-11-02 09:25:20,312 - __main__ - INFO - Built feature matrix with 15 songs
+2025-11-02 09:25:20,326 - werkzeug - WARNING -  * Debugger is active!
+2025-11-02 09:25:20,332 - werkzeug - INFO -  * Debugger PIN: 757-167-997
+2025-11-02 09:28:04,717 - __main__ - INFO - Database initialized successfully
+2025-11-02 09:28:04,725 - __main__ - INFO - Built feature matrix with 15 songs
+2025-11-02 09:28:04,744 - __main__ - INFO - Starting Music Recommendation System API...
+2025-11-02 09:28:04,744 - __main__ - INFO - Make sure MySQL is running and database is configured properly.
+2025-11-02 09:28:04,745 - __main__ - INFO - API will be available at: http://localhost:5000
+2025-11-02 09:28:04,762 - __main__ - INFO - Built feature matrix with 15 songs
+2025-11-02 09:28:04,797 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.101.10:5000
+2025-11-02 09:28:04,798 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-02 09:28:04,801 - werkzeug - INFO -  * Restarting with stat
+2025-11-02 09:28:06,476 - __main__ - INFO - Database initialized successfully
+2025-11-02 09:28:06,481 - __main__ - INFO - Built feature matrix with 15 songs
+2025-11-02 09:28:06,493 - __main__ - INFO - Starting Music Recommendation System API...
+2025-11-02 09:28:06,493 - __main__ - INFO - Make sure MySQL is running and database is configured properly.
+2025-11-02 09:28:06,493 - __main__ - INFO - API will be available at: http://localhost:5000
+2025-11-02 09:28:06,508 - __main__ - INFO - Built feature matrix with 15 songs
+2025-11-02 09:28:06,523 - werkzeug - WARNING -  * Debugger is active!
+2025-11-02 09:28:06,529 - werkzeug - INFO -  * Debugger PIN: 757-167-997
+2025-11-02 09:28:23,220 - __main__ - WARNING - Could not fetch recently played: 3065 (HY000): Expression #1 of ORDER BY clause is not in SELECT list, references column 'music_recommendation_db.h.timestamp' which is not in SELECT list; this is incompatible with DISTINCT
+2025-11-02 09:28:23,225 - __main__ - INFO - ML found 4 recommendations (similarity range: 0.369 - 0.217)
+2025-11-02 09:28:23,226 - __main__ - INFO - ✅ ML recommendations found: 4 songs
+2025-11-02 09:28:23,250 - __main__ - INFO - Dashboard: current_song=Sunset Dreams, recommended_count=4, history_count=0, source=ML (similarity-based)
+2025-11-02 09:28:23,251 - __main__ - INFO - Current song: 'Sunset Dreams' by Luna Eclipse (Electronic)
+2025-11-02 09:28:23,251 - __main__ - INFO - Top recommendation: 'Breakbeat' by Electronic Fusion (Electronic)
+2025-11-02 09:28:23,310 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:28:23] "GET /dashboard/1 HTTP/1.1" 200 -
+2025-11-02 09:29:19,120 - __main__ - WARNING - Could not fetch recently played: 3065 (HY000): Expression #1 of ORDER BY clause is not in SELECT list, references column 'music_recommendation_db.h.timestamp' which is not in SELECT list; this is incompatible with DISTINCT
+2025-11-02 09:29:19,127 - __main__ - INFO - ML found 4 recommendations (similarity range: 0.369 - 0.217)
+2025-11-02 09:29:19,129 - __main__ - INFO - ✅ ML recommendations found: 4 songs
+2025-11-02 09:29:19,169 - __main__ - INFO - Dashboard: current_song=Sunset Dreams, recommended_count=4, history_count=0, source=ML (similarity-based)
+2025-11-02 09:29:19,170 - __main__ - INFO - Current song: 'Sunset Dreams' by Luna Eclipse (Electronic)
+2025-11-02 09:29:19,171 - __main__ - INFO - Top recommendation: 'Breakbeat' by Electronic Fusion (Electronic)
+2025-11-02 09:29:19,178 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:29:19] "GET /dashboard/1 HTTP/1.1" 200 -
+2025-11-02 09:29:26,351 - werkzeug - INFO -  * Detected change in 'D:\\python projects\\music-recommendation-system\\app.py', reloading
+2025-11-02 09:29:26,854 - werkzeug - INFO -  * Restarting with stat
+2025-11-02 09:29:30,280 - __main__ - INFO - Database initialized successfully
+2025-11-02 09:29:30,284 - __main__ - INFO - Built feature matrix with 15 songs
+2025-11-02 09:29:30,291 - __main__ - INFO - Starting Music Recommendation System API...
+2025-11-02 09:29:30,291 - __main__ - INFO - Make sure MySQL is running and database is configured properly.
+2025-11-02 09:29:30,291 - __main__ - INFO - API will be available at: http://localhost:5000
+2025-11-02 09:29:30,299 - __main__ - INFO - Built feature matrix with 15 songs
+2025-11-02 09:29:30,309 - werkzeug - WARNING -  * Debugger is active!
+2025-11-02 09:29:30,313 - werkzeug - INFO -  * Debugger PIN: 757-167-997
+2025-11-02 09:29:32,130 - __main__ - ERROR - Update recommendation error: 3065 (HY000): Expression #1 of ORDER BY clause is not in SELECT list, references column 'music_recommendation_db.h.timestamp' which is not in SELECT list; this is incompatible with DISTINCT
+2025-11-02 09:29:32,135 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:29:32] "[35m[1mPOST /update_recommendation/13 HTTP/1.1[0m" 500 -
+2025-11-02 09:29:35,388 - werkzeug - INFO -  * Detected change in 'D:\\python projects\\music-recommendation-system\\app.py', reloading
+2025-11-02 09:29:35,638 - werkzeug - INFO -  * Restarting with stat
+2025-11-02 09:29:38,319 - __main__ - INFO - Database initialized successfully
+2025-11-02 09:29:38,327 - __main__ - INFO - Built feature matrix with 15 songs
+2025-11-02 09:29:38,340 - __main__ - INFO - Starting Music Recommendation System API...
+2025-11-02 09:29:38,341 - __main__ - INFO - Make sure MySQL is running and database is configured properly.
+2025-11-02 09:29:38,342 - __main__ - INFO - API will be available at: http://localhost:5000
+2025-11-02 09:29:38,362 - __main__ - INFO - Built feature matrix with 15 songs
+2025-11-02 09:29:38,403 - werkzeug - WARNING -  * Debugger is active!
+2025-11-02 09:29:38,410 - werkzeug - INFO -  * Debugger PIN: 757-167-997
+2025-11-02 09:29:40,282 - __main__ - INFO - ML found 4 recommendations (similarity range: 0.369 - 0.217)
+2025-11-02 09:29:40,282 - __main__ - INFO - ✅ ML recommendations found: 4 songs
+2025-11-02 09:29:40,299 - __main__ - INFO - Dashboard: current_song=Sunset Dreams, recommended_count=4, history_count=4, source=ML (similarity-based)
+2025-11-02 09:29:40,299 - __main__ - INFO - Current song: 'Sunset Dreams' by Luna Eclipse (Electronic)
+2025-11-02 09:29:40,300 - __main__ - INFO - Top recommendation: 'Breakbeat' by Electronic Fusion (Electronic)
+2025-11-02 09:29:40,361 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:29:40] "GET /dashboard/1 HTTP/1.1" 200 -
+2025-11-02 09:29:44,897 - __main__ - ERROR - Update recommendation error: 3065 (HY000): Expression #1 of ORDER BY clause is not in SELECT list, references column 'music_recommendation_db.h.timestamp' which is not in SELECT list; this is incompatible with DISTINCT
+2025-11-02 09:29:44,899 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:29:44] "[35m[1mPOST /update_recommendation/13 HTTP/1.1[0m" 500 -
+2025-11-02 09:30:16,845 - werkzeug - INFO -  * Detected change in 'D:\\python projects\\music-recommendation-system\\app.py', reloading
+2025-11-02 09:30:17,129 - werkzeug - INFO -  * Restarting with stat
+2025-11-02 09:30:20,196 - __main__ - INFO - Database initialized successfully
+2025-11-02 09:30:20,204 - __main__ - INFO - Built feature matrix with 15 songs
+2025-11-02 09:30:20,216 - __main__ - INFO - Starting Music Recommendation System API...
+2025-11-02 09:30:20,216 - __main__ - INFO - Make sure MySQL is running and database is configured properly.
+2025-11-02 09:30:20,216 - __main__ - INFO - API will be available at: http://localhost:5000
+2025-11-02 09:30:20,228 - __main__ - INFO - Built feature matrix with 15 songs
+2025-11-02 09:30:20,244 - werkzeug - WARNING -  * Debugger is active!
+2025-11-02 09:30:20,251 - werkzeug - INFO -  * Debugger PIN: 757-167-997
+2025-11-02 09:30:26,330 - werkzeug - INFO -  * Detected change in 'D:\\python projects\\music-recommendation-system\\app.py', reloading
+2025-11-02 09:30:26,523 - werkzeug - INFO -  * Restarting with stat
+2025-11-02 09:30:28,447 - __main__ - INFO - Database initialized successfully
+2025-11-02 09:30:28,455 - __main__ - INFO - Built feature matrix with 15 songs
+2025-11-02 09:30:28,470 - __main__ - INFO - Starting Music Recommendation System API...
+2025-11-02 09:30:28,470 - __main__ - INFO - Make sure MySQL is running and database is configured properly.
+2025-11-02 09:30:28,471 - __main__ - INFO - API will be available at: http://localhost:5000
+2025-11-02 09:30:28,484 - __main__ - INFO - Built feature matrix with 15 songs
+2025-11-02 09:30:28,498 - werkzeug - WARNING -  * Debugger is active!
+2025-11-02 09:30:28,503 - werkzeug - INFO -  * Debugger PIN: 757-167-997
+2025-11-02 09:30:33,557 - werkzeug - INFO -  * Detected change in 'D:\\python projects\\music-recommendation-system\\app.py', reloading
+2025-11-02 09:30:33,817 - werkzeug - INFO -  * Restarting with stat
+2025-11-02 09:30:36,447 - __main__ - INFO - Database initialized successfully
+2025-11-02 09:30:36,454 - __main__ - INFO - Built feature matrix with 15 songs
+2025-11-02 09:30:36,466 - __main__ - INFO - Starting Music Recommendation System API...
+2025-11-02 09:30:36,467 - __main__ - INFO - Make sure MySQL is running and database is configured properly.
+2025-11-02 09:30:36,467 - __main__ - INFO - API will be available at: http://localhost:5000
+2025-11-02 09:30:36,476 - __main__ - INFO - Built feature matrix with 15 songs
+2025-11-02 09:30:36,493 - werkzeug - WARNING -  * Debugger is active!
+2025-11-02 09:30:36,502 - werkzeug - INFO -  * Debugger PIN: 757-167-997
+2025-11-02 09:30:53,618 - __main__ - INFO - ML found 4 recommendations (similarity range: 0.369 - 0.217)
+2025-11-02 09:30:53,619 - __main__ - INFO - ✅ ML recommendations found: 4 songs
+2025-11-02 09:30:53,632 - __main__ - INFO - Dashboard: current_song=Sunset Dreams, recommended_count=4, history_count=4, source=ML (similarity-based)
+2025-11-02 09:30:53,632 - __main__ - INFO - Current song: 'Sunset Dreams' by Luna Eclipse (Electronic)
+2025-11-02 09:30:53,633 - __main__ - INFO - Top recommendation: 'Breakbeat' by Electronic Fusion (Electronic)
+2025-11-02 09:30:53,743 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:30:53] "GET /dashboard/1 HTTP/1.1" 200 -
+2025-11-02 09:31:02,171 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:31:02] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-11-02 09:31:04,678 - __main__ - INFO - ML found 4 recommendations (similarity range: 0.369 - 0.217)
+2025-11-02 09:31:04,679 - __main__ - INFO - ✅ ML recommendations found: 4 songs
+2025-11-02 09:31:04,707 - __main__ - INFO - Dashboard: current_song=Sunset Dreams, recommended_count=4, history_count=4, source=ML (similarity-based)
+2025-11-02 09:31:04,709 - __main__ - INFO - Current song: 'Sunset Dreams' by Luna Eclipse (Electronic)
+2025-11-02 09:31:04,710 - __main__ - INFO - Top recommendation: 'Breakbeat' by Electronic Fusion (Electronic)
+2025-11-02 09:31:04,719 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:31:04] "GET /dashboard/1 HTTP/1.1" 200 -
+2025-11-02 09:31:04,863 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:31:04] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-11-02 09:31:52,914 - __main__ - INFO - ML found 2 recommendations (similarity range: 0.558 - 0.535)
+2025-11-02 09:31:52,915 - __main__ - INFO - ✅ ML recommendations found: 2 songs
+2025-11-02 09:31:52,936 - __main__ - INFO - Dashboard: current_song=Urban Jungle, recommended_count=2, history_count=5, source=ML (similarity-based)
+2025-11-02 09:31:52,937 - __main__ - INFO - Current song: 'Urban Jungle' by City Beats (Hip Hop)
+2025-11-02 09:31:52,937 - __main__ - INFO - Top recommendation: 'City Lights' by Urban Beat (Hip Hop)
+2025-11-02 09:31:52,940 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:31:52] "GET /dashboard/15 HTTP/1.1" 200 -
+2025-11-02 09:31:57,689 - __main__ - ERROR - Update recommendation error: 3065 (HY000): Expression #1 of ORDER BY clause is not in SELECT list, references column 'music_recommendation_db.h.timestamp' which is not in SELECT list; this is incompatible with DISTINCT
+2025-11-02 09:31:57,692 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:31:57] "[35m[1mPOST /update_recommendation/2 HTTP/1.1[0m" 500 -
+2025-11-02 09:32:59,310 - __main__ - INFO - ML found 2 recommendations (similarity range: 0.558 - 0.535)
+2025-11-02 09:32:59,310 - __main__ - INFO - ✅ ML recommendations found: 2 songs
+2025-11-02 09:32:59,333 - __main__ - INFO - Dashboard: current_song=Urban Jungle, recommended_count=2, history_count=5, source=ML (similarity-based)
+2025-11-02 09:32:59,335 - __main__ - INFO - Current song: 'Urban Jungle' by City Beats (Hip Hop)
+2025-11-02 09:32:59,336 - __main__ - INFO - Top recommendation: 'City Lights' by Urban Beat (Hip Hop)
+2025-11-02 09:32:59,427 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:32:59] "GET /dashboard/15 HTTP/1.1" 200 -
+2025-11-02 09:33:00,935 - __main__ - INFO - ML found 2 recommendations (similarity range: 0.558 - 0.535)
+2025-11-02 09:33:00,935 - __main__ - INFO - ✅ ML recommendations found: 2 songs
+2025-11-02 09:33:00,948 - __main__ - INFO - Dashboard: current_song=Urban Jungle, recommended_count=2, history_count=5, source=ML (similarity-based)
+2025-11-02 09:33:00,949 - __main__ - INFO - Current song: 'Urban Jungle' by City Beats (Hip Hop)
+2025-11-02 09:33:00,950 - __main__ - INFO - Top recommendation: 'City Lights' by Urban Beat (Hip Hop)
+2025-11-02 09:33:00,955 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:33:00] "GET /dashboard/15 HTTP/1.1" 200 -
+2025-11-02 09:33:02,431 - __main__ - INFO - ML found 2 recommendations (similarity range: 0.558 - 0.535)
+2025-11-02 09:33:02,432 - __main__ - INFO - ✅ ML recommendations found: 2 songs
+2025-11-02 09:33:02,447 - __main__ - INFO - Dashboard: current_song=Urban Jungle, recommended_count=2, history_count=5, source=ML (similarity-based)
+2025-11-02 09:33:02,448 - __main__ - INFO - Current song: 'Urban Jungle' by City Beats (Hip Hop)
+2025-11-02 09:33:02,448 - __main__ - INFO - Top recommendation: 'City Lights' by Urban Beat (Hip Hop)
+2025-11-02 09:33:02,453 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:33:02] "GET /dashboard/15 HTTP/1.1" 200 -
+2025-11-02 09:33:03,243 - __main__ - INFO - ML found 2 recommendations (similarity range: 0.558 - 0.535)
+2025-11-02 09:33:03,244 - __main__ - INFO - ✅ ML recommendations found: 2 songs
+2025-11-02 09:33:03,255 - __main__ - INFO - Dashboard: current_song=Urban Jungle, recommended_count=2, history_count=5, source=ML (similarity-based)
+2025-11-02 09:33:03,256 - __main__ - INFO - Current song: 'Urban Jungle' by City Beats (Hip Hop)
+2025-11-02 09:33:03,257 - __main__ - INFO - Top recommendation: 'City Lights' by Urban Beat (Hip Hop)
+2025-11-02 09:33:03,262 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:33:03] "GET /dashboard/15 HTTP/1.1" 200 -
+2025-11-02 09:33:10,486 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:33:10] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-11-02 09:33:13,472 - __main__ - INFO - ML found 2 recommendations (similarity range: 0.558 - 0.535)
+2025-11-02 09:33:13,473 - __main__ - INFO - ✅ ML recommendations found: 2 songs
+2025-11-02 09:33:13,486 - __main__ - INFO - Dashboard: current_song=Urban Jungle, recommended_count=2, history_count=5, source=ML (similarity-based)
+2025-11-02 09:33:13,486 - __main__ - INFO - Current song: 'Urban Jungle' by City Beats (Hip Hop)
+2025-11-02 09:33:13,487 - __main__ - INFO - Top recommendation: 'City Lights' by Urban Beat (Hip Hop)
+2025-11-02 09:33:13,490 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:33:13] "GET /dashboard/15 HTTP/1.1" 200 -
+2025-11-02 09:33:13,576 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:33:13] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-11-02 09:34:48,925 - __main__ - INFO - ML found 2 recommendations (similarity range: 0.558 - 0.535)
+2025-11-02 09:34:48,926 - __main__ - INFO - ✅ ML recommendations found: 2 songs
+2025-11-02 09:34:48,948 - __main__ - INFO - Dashboard: current_song=Urban Jungle, recommended_count=2, history_count=5, source=ML (similarity-based)
+2025-11-02 09:34:48,949 - __main__ - INFO - Current song: 'Urban Jungle' by City Beats (Hip Hop)
+2025-11-02 09:34:48,949 - __main__ - INFO - Top recommendation: 'City Lights' by Urban Beat (Hip Hop)
+2025-11-02 09:34:48,991 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:34:48] "GET /dashboard/15 HTTP/1.1" 200 -
+2025-11-02 09:34:49,051 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:34:49] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-11-02 09:34:57,062 - __main__ - INFO - ML found 2 recommendations (similarity range: 0.558 - 0.535)
+2025-11-02 09:34:57,062 - __main__ - INFO - ✅ ML recommendations found: 2 songs
+2025-11-02 09:34:57,074 - __main__ - INFO - Dashboard: current_song=Urban Jungle, recommended_count=2, history_count=5, source=ML (similarity-based)
+2025-11-02 09:34:57,074 - __main__ - INFO - Current song: 'Urban Jungle' by City Beats (Hip Hop)
+2025-11-02 09:34:57,075 - __main__ - INFO - Top recommendation: 'City Lights' by Urban Beat (Hip Hop)
+2025-11-02 09:34:57,078 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:34:57] "GET /dashboard/15 HTTP/1.1" 200 -
+2025-11-02 09:34:57,340 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:34:57] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-11-02 09:35:01,136 - __main__ - INFO - ML found 2 recommendations (similarity range: 0.558 - 0.535)
+2025-11-02 09:35:01,137 - __main__ - INFO - ✅ ML recommendations found: 2 songs
+2025-11-02 09:35:01,152 - __main__ - INFO - Dashboard: current_song=Urban Jungle, recommended_count=2, history_count=5, source=ML (similarity-based)
+2025-11-02 09:35:01,153 - __main__ - INFO - Current song: 'Urban Jungle' by City Beats (Hip Hop)
+2025-11-02 09:35:01,154 - __main__ - INFO - Top recommendation: 'City Lights' by Urban Beat (Hip Hop)
+2025-11-02 09:35:01,158 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:35:01] "GET /dashboard/15 HTTP/1.1" 200 -
+2025-11-02 09:35:01,285 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:35:01] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-11-02 09:35:02,825 - __main__ - INFO - ML found 2 recommendations (similarity range: 0.558 - 0.535)
+2025-11-02 09:35:02,826 - __main__ - INFO - ✅ ML recommendations found: 2 songs
+2025-11-02 09:35:02,843 - __main__ - INFO - Dashboard: current_song=Urban Jungle, recommended_count=2, history_count=5, source=ML (similarity-based)
+2025-11-02 09:35:02,844 - __main__ - INFO - Current song: 'Urban Jungle' by City Beats (Hip Hop)
+2025-11-02 09:35:02,845 - __main__ - INFO - Top recommendation: 'City Lights' by Urban Beat (Hip Hop)
+2025-11-02 09:35:02,850 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:35:02] "GET /dashboard/15 HTTP/1.1" 200 -
+2025-11-02 09:35:03,098 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:35:03] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-11-02 09:35:04,056 - __main__ - INFO - ML found 2 recommendations (similarity range: 0.558 - 0.535)
+2025-11-02 09:35:04,057 - __main__ - INFO - ✅ ML recommendations found: 2 songs
+2025-11-02 09:35:04,072 - __main__ - INFO - Dashboard: current_song=Urban Jungle, recommended_count=2, history_count=5, source=ML (similarity-based)
+2025-11-02 09:35:04,073 - __main__ - INFO - Current song: 'Urban Jungle' by City Beats (Hip Hop)
+2025-11-02 09:35:04,074 - __main__ - INFO - Top recommendation: 'City Lights' by Urban Beat (Hip Hop)
+2025-11-02 09:35:04,077 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:35:04] "GET /dashboard/15 HTTP/1.1" 200 -
+2025-11-02 09:35:04,207 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:35:04] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-11-02 09:35:04,815 - __main__ - INFO - ML found 2 recommendations (similarity range: 0.558 - 0.535)
+2025-11-02 09:35:04,816 - __main__ - INFO - ✅ ML recommendations found: 2 songs
+2025-11-02 09:35:04,839 - __main__ - INFO - Dashboard: current_song=Urban Jungle, recommended_count=2, history_count=5, source=ML (similarity-based)
+2025-11-02 09:35:04,840 - __main__ - INFO - Current song: 'Urban Jungle' by City Beats (Hip Hop)
+2025-11-02 09:35:04,841 - __main__ - INFO - Top recommendation: 'City Lights' by Urban Beat (Hip Hop)
+2025-11-02 09:35:04,847 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:35:04] "GET /dashboard/15 HTTP/1.1" 200 -
+2025-11-02 09:35:05,092 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:35:05] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-11-02 09:35:10,772 - __main__ - INFO - ML found 2 recommendations (similarity range: 0.558 - 0.535)
+2025-11-02 09:35:10,772 - __main__ - INFO - ✅ ML recommendations found: 2 songs
+2025-11-02 09:35:10,789 - __main__ - INFO - Dashboard: current_song=Urban Jungle, recommended_count=2, history_count=5, source=ML (similarity-based)
+2025-11-02 09:35:10,789 - __main__ - INFO - Current song: 'Urban Jungle' by City Beats (Hip Hop)
+2025-11-02 09:35:10,791 - __main__ - INFO - Top recommendation: 'City Lights' by Urban Beat (Hip Hop)
+2025-11-02 09:35:10,795 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:35:10] "GET /dashboard/15 HTTP/1.1" 200 -
+2025-11-02 09:35:11,621 - __main__ - INFO - ML found 2 recommendations (similarity range: 0.558 - 0.535)
+2025-11-02 09:35:11,621 - __main__ - INFO - ✅ ML recommendations found: 2 songs
+2025-11-02 09:35:11,635 - __main__ - INFO - Dashboard: current_song=Urban Jungle, recommended_count=2, history_count=5, source=ML (similarity-based)
+2025-11-02 09:35:11,636 - __main__ - INFO - Current song: 'Urban Jungle' by City Beats (Hip Hop)
+2025-11-02 09:35:11,637 - __main__ - INFO - Top recommendation: 'City Lights' by Urban Beat (Hip Hop)
+2025-11-02 09:35:11,644 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:35:11] "GET /dashboard/15 HTTP/1.1" 200 -
+2025-11-02 09:35:39,212 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:35:39] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-11-02 09:37:25,316 - __main__ - INFO - ML found 2 recommendations (similarity range: 0.558 - 0.535)
+2025-11-02 09:37:25,316 - __main__ - INFO - ✅ ML recommendations found: 2 songs
+2025-11-02 09:37:25,339 - __main__ - INFO - Dashboard: current_song=Urban Jungle, recommended_count=2, history_count=5, source=ML (similarity-based)
+2025-11-02 09:37:25,340 - __main__ - INFO - Current song: 'Urban Jungle' by City Beats (Hip Hop)
+2025-11-02 09:37:25,340 - __main__ - INFO - Top recommendation: 'City Lights' by Urban Beat (Hip Hop)
+2025-11-02 09:37:25,385 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:37:25] "GET /dashboard/15 HTTP/1.1" 200 -
+2025-11-02 09:37:25,452 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:37:25] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-11-02 09:38:03,316 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:38:03] "GET /home HTTP/1.1" 200 -
+2025-11-02 09:38:03,757 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:38:03] "[36mGET /static/images/SoundWave.png HTTP/1.1[0m" 304 -
+2025-11-02 09:38:18,147 - werkzeug - INFO -  * Detected change in 'D:\\python projects\\music-recommendation-system\\assign_audio_urls.py', reloading
+2025-11-02 09:38:18,424 - werkzeug - INFO -  * Restarting with stat
+2025-11-02 09:38:22,523 - __main__ - INFO - Database initialized successfully
+2025-11-02 09:38:22,534 - __main__ - INFO - Built feature matrix with 15 songs
+2025-11-02 09:38:22,549 - __main__ - INFO - Starting Music Recommendation System API...
+2025-11-02 09:38:22,550 - __main__ - INFO - Make sure MySQL is running and database is configured properly.
+2025-11-02 09:38:22,550 - __main__ - INFO - API will be available at: http://localhost:5000
+2025-11-02 09:38:22,564 - __main__ - INFO - Built feature matrix with 15 songs
+2025-11-02 09:38:22,578 - werkzeug - WARNING -  * Debugger is active!
+2025-11-02 09:38:22,584 - werkzeug - INFO -  * Debugger PIN: 757-167-997
+2025-11-02 09:39:54,510 - werkzeug - INFO -  * Detected change in 'D:\\python projects\\music-recommendation-system\\assign_audio_urls.py', reloading
+2025-11-02 09:39:54,727 - werkzeug - INFO -  * Restarting with stat
+2025-11-02 09:39:58,278 - __main__ - INFO - Database initialized successfully
+2025-11-02 09:39:58,284 - __main__ - INFO - Built feature matrix with 15 songs
+2025-11-02 09:39:58,295 - __main__ - INFO - Starting Music Recommendation System API...
+2025-11-02 09:39:58,296 - __main__ - INFO - Make sure MySQL is running and database is configured properly.
+2025-11-02 09:39:58,296 - __main__ - INFO - API will be available at: http://localhost:5000
+2025-11-02 09:39:58,309 - __main__ - INFO - Built feature matrix with 15 songs
+2025-11-02 09:39:58,325 - werkzeug - WARNING -  * Debugger is active!
+2025-11-02 09:39:58,333 - werkzeug - INFO -  * Debugger PIN: 757-167-997
+2025-11-02 09:40:17,597 - werkzeug - INFO -  * Detected change in 'D:\\python projects\\music-recommendation-system\\assign_audio_urls.py', reloading
+2025-11-02 09:40:17,920 - werkzeug - INFO -  * Restarting with stat
+2025-11-02 09:40:20,614 - __main__ - INFO - Database initialized successfully
+2025-11-02 09:40:20,621 - __main__ - INFO - Built feature matrix with 15 songs
+2025-11-02 09:40:20,633 - __main__ - INFO - Starting Music Recommendation System API...
+2025-11-02 09:40:20,633 - __main__ - INFO - Make sure MySQL is running and database is configured properly.
+2025-11-02 09:40:20,634 - __main__ - INFO - API will be available at: http://localhost:5000
+2025-11-02 09:40:20,646 - __main__ - INFO - Built feature matrix with 15 songs
+2025-11-02 09:40:20,666 - werkzeug - WARNING -  * Debugger is active!
+2025-11-02 09:40:20,675 - werkzeug - INFO -  * Debugger PIN: 757-167-997
+2025-11-02 09:40:32,249 - __main__ - INFO - ML found 4 recommendations (similarity range: 0.369 - 0.217)
+2025-11-02 09:40:32,250 - __main__ - INFO - ✅ ML recommendations found: 4 songs
+2025-11-02 09:40:32,282 - __main__ - INFO - Dashboard: current_song=Sunset Dreams, recommended_count=4, history_count=5, source=ML (similarity-based)
+2025-11-02 09:40:32,285 - __main__ - INFO - Current song: 'Sunset Dreams' by Luna Eclipse (Electronic)
+2025-11-02 09:40:32,287 - __main__ - INFO - Top recommendation: 'Breakbeat' by Electronic Fusion (Electronic)
+2025-11-02 09:40:32,331 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:40:32] "GET /dashboard/1 HTTP/1.1" 200 -
+2025-11-02 09:40:32,445 - __main__ - ERROR - Update recommendation error: 3065 (HY000): Expression #1 of ORDER BY clause is not in SELECT list, references column 'music_recommendation_db.h.timestamp' which is not in SELECT list; this is incompatible with DISTINCT
+2025-11-02 09:40:32,447 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:40:32] "[35m[1mPOST /update_recommendation/1 HTTP/1.1[0m" 500 -
+2025-11-02 09:40:33,549 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:40:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-11-02 09:40:38,867 - werkzeug - INFO -  * Detected change in 'D:\\python projects\\music-recommendation-system\\app.py', reloading
+2025-11-02 09:40:39,221 - werkzeug - INFO -  * Restarting with stat
+2025-11-02 09:40:42,770 - __main__ - INFO - Database initialized successfully
+2025-11-02 09:40:42,800 - __main__ - INFO - Built feature matrix with 15 songs
+2025-11-02 09:40:42,838 - __main__ - INFO - Starting Music Recommendation System API...
+2025-11-02 09:40:42,840 - __main__ - INFO - Make sure MySQL is running and database is configured properly.
+2025-11-02 09:40:42,841 - __main__ - INFO - API will be available at: http://localhost:5000
+2025-11-02 09:40:42,868 - __main__ - INFO - Built feature matrix with 15 songs
+2025-11-02 09:40:42,905 - werkzeug - WARNING -  * Debugger is active!
+2025-11-02 09:40:42,915 - werkzeug - INFO -  * Debugger PIN: 757-167-997
+2025-11-02 09:40:43,024 - __main__ - INFO - ML found 4 recommendations (similarity range: 0.310 - 0.179)
+2025-11-02 09:40:43,024 - __main__ - INFO - ✅ ML recommendations found: 4 songs
+2025-11-02 09:40:43,040 - __main__ - INFO - Dashboard: current_song=Midnight Drive, recommended_count=4, history_count=5, source=ML (similarity-based)
+2025-11-02 09:40:43,041 - __main__ - INFO - Current song: 'Midnight Drive' by Retro Wave (Electronic)
+2025-11-02 09:40:43,041 - __main__ - INFO - Top recommendation: 'Sunset Dreams' by Luna Eclipse (Electronic)
+2025-11-02 09:40:43,161 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:40:43] "GET /dashboard/13 HTTP/1.1" 200 -
+2025-11-02 09:40:43,351 - __main__ - ERROR - Update recommendation error: 3065 (HY000): Expression #1 of ORDER BY clause is not in SELECT list, references column 'music_recommendation_db.h.timestamp' which is not in SELECT list; this is incompatible with DISTINCT
+2025-11-02 09:40:43,353 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:40:43] "[35m[1mPOST /update_recommendation/13 HTTP/1.1[0m" 500 -
+2025-11-02 09:40:49,001 - __main__ - INFO - ML found 4 recommendations (similarity range: 0.362 - 0.209)
+2025-11-02 09:40:49,002 - __main__ - INFO - ✅ ML recommendations found: 4 songs
+2025-11-02 09:40:49,017 - __main__ - INFO - Dashboard: current_song=Neon Nights, recommended_count=4, history_count=6, source=ML (similarity-based)
+2025-11-02 09:40:49,017 - __main__ - INFO - Current song: 'Neon Nights' by Cyber Pulse (Electronic)
+2025-11-02 09:40:49,017 - __main__ - INFO - Top recommendation: 'Breakbeat' by Electronic Fusion (Electronic)
+2025-11-02 09:40:49,022 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:40:49] "GET /dashboard/5 HTTP/1.1" 200 -
+2025-11-02 09:40:49,376 - __main__ - ERROR - Update recommendation error: 3065 (HY000): Expression #1 of ORDER BY clause is not in SELECT list, references column 'music_recommendation_db.h.timestamp' which is not in SELECT list; this is incompatible with DISTINCT
+2025-11-02 09:40:49,377 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:40:49] "[35m[1mPOST /update_recommendation/5 HTTP/1.1[0m" 500 -
+2025-11-02 09:40:50,338 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:40:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-11-02 09:41:36,644 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:41:36] "GET /home HTTP/1.1" 200 -
+2025-11-02 09:41:37,084 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:41:37] "[36mGET /static/images/SoundWave.png HTTP/1.1[0m" 304 -
+2025-11-02 09:41:39,892 - __main__ - INFO - ML found 4 recommendations (similarity range: 0.369 - 0.217)
+2025-11-02 09:41:39,893 - __main__ - INFO - ✅ ML recommendations found: 4 songs
+2025-11-02 09:41:39,925 - __main__ - INFO - Dashboard: current_song=Sunset Dreams, recommended_count=4, history_count=6, source=ML (similarity-based)
+2025-11-02 09:41:39,927 - __main__ - INFO - Current song: 'Sunset Dreams' by Luna Eclipse (Electronic)
+2025-11-02 09:41:39,928 - __main__ - INFO - Top recommendation: 'Breakbeat' by Electronic Fusion (Electronic)
+2025-11-02 09:41:40,003 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:41:40] "GET /dashboard/1 HTTP/1.1" 200 -
+2025-11-02 09:41:40,175 - __main__ - ERROR - Update recommendation error: 3065 (HY000): Expression #1 of ORDER BY clause is not in SELECT list, references column 'music_recommendation_db.h.timestamp' which is not in SELECT list; this is incompatible with DISTINCT
+2025-11-02 09:41:40,176 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:41:40] "[35m[1mPOST /update_recommendation/1 HTTP/1.1[0m" 500 -
+2025-11-02 09:42:05,321 - __main__ - INFO - ML found 4 recommendations (similarity range: 0.310 - 0.179)
+2025-11-02 09:42:05,322 - __main__ - INFO - ✅ ML recommendations found: 4 songs
+2025-11-02 09:42:05,332 - __main__ - INFO - Dashboard: current_song=Midnight Drive, recommended_count=4, history_count=6, source=ML (similarity-based)
+2025-11-02 09:42:05,332 - __main__ - INFO - Current song: 'Midnight Drive' by Retro Wave (Electronic)
+2025-11-02 09:42:05,333 - __main__ - INFO - Top recommendation: 'Sunset Dreams' by Luna Eclipse (Electronic)
+2025-11-02 09:42:05,394 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:42:05] "GET /dashboard/13 HTTP/1.1" 200 -
+2025-11-02 09:42:05,722 - __main__ - ERROR - Update recommendation error: 3065 (HY000): Expression #1 of ORDER BY clause is not in SELECT list, references column 'music_recommendation_db.h.timestamp' which is not in SELECT list; this is incompatible with DISTINCT
+2025-11-02 09:42:05,723 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:42:05] "[35m[1mPOST /update_recommendation/13 HTTP/1.1[0m" 500 -
+2025-11-02 09:42:07,131 - __main__ - INFO - ML found 8 recommendations (similarity range: 0.310 - 0.099)
+2025-11-02 09:42:07,131 - __main__ - INFO - ✅ ML recommendations found: 8 songs
+2025-11-02 09:42:07,154 - __main__ - INFO - Dashboard: current_song=Stargazing, recommended_count=8, history_count=7, source=ML (similarity-based)
+2025-11-02 09:42:07,155 - __main__ - INFO - Current song: 'Stargazing' by Cosmic Journey (Electronic)
+2025-11-02 09:42:07,155 - __main__ - INFO - Top recommendation: 'Breakbeat' by Electronic Fusion (Electronic)
+2025-11-02 09:42:07,235 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:42:07] "GET /dashboard/9 HTTP/1.1" 200 -
+2025-11-02 09:42:07,446 - __main__ - ERROR - Update recommendation error: 3065 (HY000): Expression #1 of ORDER BY clause is not in SELECT list, references column 'music_recommendation_db.h.timestamp' which is not in SELECT list; this is incompatible with DISTINCT
+2025-11-02 09:42:07,448 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:42:07] "[35m[1mPOST /update_recommendation/9 HTTP/1.1[0m" 500 -
+2025-11-02 09:42:10,849 - __main__ - INFO - ML found 4 recommendations (similarity range: 0.369 - 0.217)
+2025-11-02 09:42:10,851 - __main__ - INFO - ✅ ML recommendations found: 4 songs
+2025-11-02 09:42:10,877 - __main__ - INFO - Dashboard: current_song=Sunset Dreams, recommended_count=4, history_count=7, source=ML (similarity-based)
+2025-11-02 09:42:10,878 - __main__ - INFO - Current song: 'Sunset Dreams' by Luna Eclipse (Electronic)
+2025-11-02 09:42:10,878 - __main__ - INFO - Top recommendation: 'Breakbeat' by Electronic Fusion (Electronic)
+2025-11-02 09:42:10,881 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:42:10] "GET /dashboard/1 HTTP/1.1" 200 -
+2025-11-02 09:42:11,182 - __main__ - ERROR - Update recommendation error: 3065 (HY000): Expression #1 of ORDER BY clause is not in SELECT list, references column 'music_recommendation_db.h.timestamp' which is not in SELECT list; this is incompatible with DISTINCT
+2025-11-02 09:42:11,183 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:42:11] "[35m[1mPOST /update_recommendation/1 HTTP/1.1[0m" 500 -
+2025-11-02 09:42:12,875 - __main__ - INFO - ML found 8 recommendations (similarity range: 0.310 - 0.099)
+2025-11-02 09:42:12,876 - __main__ - INFO - ✅ ML recommendations found: 8 songs
+2025-11-02 09:42:12,894 - __main__ - INFO - Dashboard: current_song=Stargazing, recommended_count=8, history_count=7, source=ML (similarity-based)
+2025-11-02 09:42:12,894 - __main__ - INFO - Current song: 'Stargazing' by Cosmic Journey (Electronic)
+2025-11-02 09:42:12,895 - __main__ - INFO - Top recommendation: 'Breakbeat' by Electronic Fusion (Electronic)
+2025-11-02 09:42:12,936 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:42:12] "GET /dashboard/9 HTTP/1.1" 200 -
+2025-11-02 09:42:13,053 - __main__ - ERROR - Update recommendation error: 3065 (HY000): Expression #1 of ORDER BY clause is not in SELECT list, references column 'music_recommendation_db.h.timestamp' which is not in SELECT list; this is incompatible with DISTINCT
+2025-11-02 09:42:13,055 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:42:13] "[35m[1mPOST /update_recommendation/9 HTTP/1.1[0m" 500 -
+2025-11-02 09:42:14,481 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:42:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-11-02 09:42:16,416 - __main__ - INFO - ML found 5 recommendations (similarity range: 0.464 - 0.080)
+2025-11-02 09:42:16,418 - __main__ - INFO - ✅ ML recommendations found: 5 songs
+2025-11-02 09:42:16,449 - __main__ - INFO - Dashboard: current_song=Ocean Waves, recommended_count=5, history_count=7, source=ML (similarity-based)
+2025-11-02 09:42:16,449 - __main__ - INFO - Current song: 'Ocean Waves' by Coastal Harmony (Ambient)
+2025-11-02 09:42:16,450 - __main__ - INFO - Top recommendation: 'Forest Walk' by Nature's Path (Ambient)
+2025-11-02 09:42:16,453 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:42:16] "GET /dashboard/2 HTTP/1.1" 200 -
+2025-11-02 09:42:16,642 - __main__ - ERROR - Update recommendation error: 3065 (HY000): Expression #1 of ORDER BY clause is not in SELECT list, references column 'music_recommendation_db.h.timestamp' which is not in SELECT list; this is incompatible with DISTINCT
+2025-11-02 09:42:16,643 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:42:16] "[35m[1mPOST /update_recommendation/2 HTTP/1.1[0m" 500 -
+2025-11-02 09:42:28,294 - __main__ - INFO - ML found 4 recommendations (similarity range: 0.530 - 0.077)
+2025-11-02 09:42:28,295 - __main__ - INFO - ✅ ML recommendations found: 4 songs
+2025-11-02 09:42:28,323 - __main__ - INFO - Dashboard: current_song=Countryside, recommended_count=4, history_count=8, source=ML (similarity-based)
+2025-11-02 09:42:28,324 - __main__ - INFO - Current song: 'Countryside' by Acoustic Soul (Folk)
+2025-11-02 09:42:28,325 - __main__ - INFO - Top recommendation: 'Mountain High' by Folk Tales (Folk)
+2025-11-02 09:42:28,436 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:42:28] "GET /dashboard/8 HTTP/1.1" 200 -
+2025-11-02 09:42:28,650 - __main__ - ERROR - Update recommendation error: 3065 (HY000): Expression #1 of ORDER BY clause is not in SELECT list, references column 'music_recommendation_db.h.timestamp' which is not in SELECT list; this is incompatible with DISTINCT
+2025-11-02 09:42:28,652 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:42:28] "[35m[1mPOST /update_recommendation/8 HTTP/1.1[0m" 500 -
+2025-11-02 09:42:32,164 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:42:32] "GET /home HTTP/1.1" 200 -
+2025-11-02 09:42:32,233 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:42:32] "[36mGET /static/images/SoundWave.png HTTP/1.1[0m" 304 -
+2025-11-02 09:42:51,306 - __main__ - INFO - ML found 3 recommendations (similarity range: 0.661 - 0.132)
+2025-11-02 09:42:51,307 - __main__ - INFO - ✅ ML recommendations found: 3 songs
+2025-11-02 09:42:51,322 - __main__ - INFO - Dashboard: current_song=Street Dance, recommended_count=3, history_count=9, source=ML (similarity-based)
+2025-11-02 09:42:51,323 - __main__ - INFO - Current song: 'Street Dance' by Hip Hop Collective (Hip Hop)
+2025-11-02 09:42:51,325 - __main__ - INFO - Top recommendation: 'City Lights' by Urban Beat (Hip Hop)
+2025-11-02 09:42:51,330 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:42:51] "GET /dashboard/7 HTTP/1.1" 200 -
+2025-11-02 09:42:51,690 - __main__ - ERROR - Update recommendation error: 3065 (HY000): Expression #1 of ORDER BY clause is not in SELECT list, references column 'music_recommendation_db.h.timestamp' which is not in SELECT list; this is incompatible with DISTINCT
+2025-11-02 09:42:51,692 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:42:51] "[35m[1mPOST /update_recommendation/7 HTTP/1.1[0m" 500 -
+2025-11-02 09:43:24,938 - __main__ - INFO - ML found 4 recommendations (similarity range: 0.369 - 0.217)
+2025-11-02 09:43:24,939 - __main__ - INFO - ✅ ML recommendations found: 4 songs
+2025-11-02 09:43:24,963 - __main__ - INFO - Dashboard: current_song=Sunset Dreams, recommended_count=4, history_count=9, source=ML (similarity-based)
+2025-11-02 09:43:24,964 - __main__ - INFO - Current song: 'Sunset Dreams' by Luna Eclipse (Electronic)
+2025-11-02 09:43:24,966 - __main__ - INFO - Top recommendation: 'Breakbeat' by Electronic Fusion (Electronic)
+2025-11-02 09:43:25,113 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:43:25] "GET /dashboard/1 HTTP/1.1" 200 -
+2025-11-02 09:43:25,310 - __main__ - ERROR - Update recommendation error: 3065 (HY000): Expression #1 of ORDER BY clause is not in SELECT list, references column 'music_recommendation_db.h.timestamp' which is not in SELECT list; this is incompatible with DISTINCT
+2025-11-02 09:43:25,312 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:43:25] "[35m[1mPOST /update_recommendation/1 HTTP/1.1[0m" 500 -
+2025-11-02 09:43:32,997 - __main__ - INFO - ML found 4 recommendations (similarity range: 0.369 - 0.217)
+2025-11-02 09:43:32,998 - __main__ - INFO - ✅ ML recommendations found: 4 songs
+2025-11-02 09:43:33,033 - __main__ - INFO - Dashboard: current_song=Sunset Dreams, recommended_count=4, history_count=9, source=ML (similarity-based)
+2025-11-02 09:43:33,034 - __main__ - INFO - Current song: 'Sunset Dreams' by Luna Eclipse (Electronic)
+2025-11-02 09:43:33,035 - __main__ - INFO - Top recommendation: 'Breakbeat' by Electronic Fusion (Electronic)
+2025-11-02 09:43:33,043 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:43:33] "GET /dashboard/1 HTTP/1.1" 200 -
+2025-11-02 09:43:33,234 - __main__ - ERROR - Update recommendation error: 3065 (HY000): Expression #1 of ORDER BY clause is not in SELECT list, references column 'music_recommendation_db.h.timestamp' which is not in SELECT list; this is incompatible with DISTINCT
+2025-11-02 09:43:33,237 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:43:33] "[35m[1mPOST /update_recommendation/1 HTTP/1.1[0m" 500 -
+2025-11-02 09:43:42,286 - __main__ - INFO - ML found 5 recommendations (similarity range: 0.464 - 0.080)
+2025-11-02 09:43:42,287 - __main__ - INFO - ✅ ML recommendations found: 5 songs
+2025-11-02 09:43:42,316 - __main__ - INFO - Dashboard: current_song=Ocean Waves, recommended_count=5, history_count=9, source=ML (similarity-based)
+2025-11-02 09:43:42,318 - __main__ - INFO - Current song: 'Ocean Waves' by Coastal Harmony (Ambient)
+2025-11-02 09:43:42,319 - __main__ - INFO - Top recommendation: 'Forest Walk' by Nature's Path (Ambient)
+2025-11-02 09:43:42,389 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:43:42] "GET /dashboard/2 HTTP/1.1" 200 -
+2025-11-02 09:43:42,566 - __main__ - ERROR - Update recommendation error: 3065 (HY000): Expression #1 of ORDER BY clause is not in SELECT list, references column 'music_recommendation_db.h.timestamp' which is not in SELECT list; this is incompatible with DISTINCT
+2025-11-02 09:43:42,568 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:43:42] "[35m[1mPOST /update_recommendation/2 HTTP/1.1[0m" 500 -
+2025-11-02 09:43:45,523 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:43:45] "GET /playlists HTTP/1.1" 200 -
+2025-11-02 09:43:47,876 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:43:47] "GET /home HTTP/1.1" 200 -
+2025-11-02 09:43:47,923 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:43:47] "[36mGET /static/images/SoundWave.png HTTP/1.1[0m" 304 -
+2025-11-02 09:43:50,163 - __main__ - INFO - ML found 4 recommendations (similarity range: 0.369 - 0.217)
+2025-11-02 09:43:50,165 - __main__ - INFO - ✅ ML recommendations found: 4 songs
+2025-11-02 09:43:50,198 - __main__ - INFO - Dashboard: current_song=Sunset Dreams, recommended_count=4, history_count=9, source=ML (similarity-based)
+2025-11-02 09:43:50,199 - __main__ - INFO - Current song: 'Sunset Dreams' by Luna Eclipse (Electronic)
+2025-11-02 09:43:50,200 - __main__ - INFO - Top recommendation: 'Breakbeat' by Electronic Fusion (Electronic)
+2025-11-02 09:43:50,209 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:43:50] "GET /dashboard/1 HTTP/1.1" 200 -
+2025-11-02 09:43:50,418 - __main__ - ERROR - Update recommendation error: 3065 (HY000): Expression #1 of ORDER BY clause is not in SELECT list, references column 'music_recommendation_db.h.timestamp' which is not in SELECT list; this is incompatible with DISTINCT
+2025-11-02 09:43:50,420 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2025 09:43:50] "[35m[1mPOST /update_recommendation/1 HTTP/1.1[0m" 500 -

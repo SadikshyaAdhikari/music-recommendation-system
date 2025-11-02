@@ -13,11 +13,13 @@ sample_audio_urls = [
 ]
 
 # 🔌 Connect to your MySQL database
+# Uses environment variables if set, otherwise defaults to Docker MySQL values
+import os
 db = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="",  # add your password if needed
-    database="music_recommendation_db"
+    host=os.getenv('MYSQL_HOST', 'localhost'),
+    user=os.getenv('MYSQL_USER', 'root'),
+    password=os.getenv('MYSQL_PASSWORD', 'rootpassword'),  # Docker MySQL password
+    database=os.getenv('MYSQL_DATABASE', 'music_recommendation_db')
 )
 
 cursor = db.cursor()
@@ -38,4 +40,4 @@ db.commit()
 cursor.close()
 db.close()
 
-print("✅ Done: Sample audio assigned to all missing songs.")
+print("Done: Sample audio assigned to all missing songs.")
